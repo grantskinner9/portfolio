@@ -1,0 +1,47 @@
+@import "variables";
+
+header {
+  height: 100vh;
+  background-color: $white;
+  background-image: url(../assets/sub-bnr-home.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-attachment: fixed;
+  h1 {
+    font-size: 2rem;
+    font-family: $primaryFont;
+    color: $black;
+    font-weight: normal;
+    letter-spacing: 2px;
+    position: relative;
+    &::before {
+      content: "";
+      width: 75px;
+      height: 4px;
+      background-color: $black;
+      position: absolute;
+      top: 22px;
+      left: -105px;
+      // position: absolute;
+      // bottom: 0;
+      // left: 125px;
+    }
+    span {
+      text-transform: uppercase;
+      display: block;
+      font-weight: bold;
+      font-size: 5.25rem;
+      font-family: "montserratbold";
+      padding: 10px 0 10px 0;
+    }
+  }
+  p {
+    color: $grey;
+    font-family: $secondaryFont;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+  }
+}

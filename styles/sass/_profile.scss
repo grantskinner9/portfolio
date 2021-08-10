@@ -1,0 +1,67 @@
+@import "variables";
+
+.profile {
+  margin-top: 100px;
+  padding-top: 300px;
+  padding-bottom: 300px;
+  color: $black;
+  background-color: #fff;
+  background-image: url(../assets/hello-bg.png);
+  background-repeat: no-repeat;
+  position: relative;
+  .profileTitle {
+    text-align: center;
+    .title {
+      font-family: $primaryFont;
+      font-weight: 500;
+      font-size: 1.25rem;
+      padding-left: 150px;
+      position: relative;
+      display: inline-block;
+      &::before {
+        content: "";
+        width: 1px;
+        height: 80px;
+        border-right: 1px solid $black;
+        position: absolute;
+        bottom: 0;
+        left: 125px;
+      }
+    }
+    h2 {
+      font-family: $secondaryFont;
+      font-size: 5.25rem;
+      text-transform: uppercase;
+      color: $black;
+      padding-top: 20px;
+    }
+  }
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    position: absolute;
+    top: -150px;
+    rotate: -3deg;
+    // left: 125px;
+  }
+}
+
+.profileFlex {
+  display: flex;
+  position: relative;
+  .profileImageContainer {
+    width: 45%;
+  }
+  .profileTextContainer {
+    width: 60%;
+    padding-top: 150px;
+    color: $black;
+    font-family: $primaryFont;
+    font-size: 1.5rem;
+    line-height: 52px;
+    position: absolute;
+    right: 100px;
+  }
+}
