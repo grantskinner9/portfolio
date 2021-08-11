@@ -7,6 +7,7 @@
   .sectionTitle {
     padding-top: 50px;
     text-align: center;
+    padding-bottom: 150px;
     .title {
       padding-left: 150px;
       position: relative;
@@ -37,13 +38,22 @@
 }
 
 .projectResults {
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
   .project {
     display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 100px;
     .projectTextContainer {
-      width: 30%;
+      // width: 30%;
     }
     .projectImageContainer {
-      width: 45%;
+      // width: 45%;
+      img {
+        height: 350px;
+        width: auto;
+      }
     }
   }
 }

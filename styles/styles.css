@@ -456,6 +456,7 @@ header p {
 .projects .sectionTitle {
   padding-top: 50px;
   text-align: center;
+  padding-bottom: 150px;
 }
 .projects .sectionTitle .title {
   padding-left: 150px;
@@ -484,16 +485,27 @@ header p {
   rotate: -3deg;
 }
 
+.projectResults {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 .projectResults .project {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-bottom: 100px;
 }
-.projectResults .project .projectTextContainer {
-  width: 30%;
-}
-.projectResults .project .projectImageContainer {
-  width: 45%;
+.projectResults .project .projectImageContainer img {
+  height: 350px;
+  width: auto;
 }
 
 html {
