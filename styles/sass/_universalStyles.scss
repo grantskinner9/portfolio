@@ -44,3 +44,27 @@ img {
   width: 100%;
   display: block;
 }
+
+// Section Headings
+
+.title {
+  font-family: $primaryFont;
+  font-weight: 500;
+  font-size: 1.25rem;
+  position: relative;
+}
+h2 {
+  font-family: $secondaryFont;
+  text-transform: uppercase;
+  color: $black;
+  padding-top: 20px;
+}
+
+h3 {
+  font-family: $secondaryFont;
+  color: $black;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 50px;
+  text-transform: uppercase;
+}

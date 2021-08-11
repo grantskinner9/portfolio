@@ -313,7 +313,7 @@ header h1 span {
   padding: 10px 0 10px 0;
 }
 header p {
-  color: #a3a2a2;
+  color: #7e7e7e;
   font-family: "Montserrat", sans-serif;
   font-size: 0.9rem;
   letter-spacing: 0.5px;
@@ -322,25 +322,29 @@ header p {
 .profile {
   margin-top: 100px;
   padding-top: 300px;
-  padding-bottom: 300px;
+  padding-bottom: 100px;
   color: #232227;
   background-color: #fff;
   background-image: url(../assets/hello-bg.png);
+  width: 100%;
   background-repeat: no-repeat;
+  background-position: center;
+  background-position: top;
+  background-size: contain;
   position: relative;
+  display: inline-block;
 }
-.profile .profileTitle {
+.profile .sectionTitle {
   text-align: center;
+  padding-bottom: 100px;
+  margin-top: -150px;
 }
-.profile .profileTitle .title {
-  font-family: "Playfair Display", serif;
-  font-weight: 500;
-  font-size: 1.25rem;
+.profile .sectionTitle .title {
   padding-left: 150px;
   position: relative;
   display: inline-block;
 }
-.profile .profileTitle .title::before {
+.profile .sectionTitle .title::before {
   content: "";
   width: 1px;
   height: 80px;
@@ -349,12 +353,8 @@ header p {
   bottom: 0;
   left: 125px;
 }
-.profile .profileTitle h2 {
-  font-family: "Montserrat", sans-serif;
+.profile .sectionTitle h2 {
   font-size: 5.25rem;
-  text-transform: uppercase;
-  color: #232227;
-  padding-top: 20px;
 }
 .profile::before {
   content: "";
@@ -377,13 +377,123 @@ header p {
 }
 .profileFlex .profileTextContainer {
   width: 60%;
-  padding-top: 150px;
+  padding-top: 100px;
+  padding-left: 50px;
   color: #232227;
   font-family: "Playfair Display", serif;
   font-size: 1.5rem;
   line-height: 52px;
+  color: #7e7e7e;
+}
+
+.skills {
+  background-image: url(../assets/skill-bg.png);
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size: contain;
+  background-position: right top;
+  padding-top: 100px;
+}
+.skills .sectionTitle {
+  position: relative;
+  top: -50px;
+  left: 100px;
+}
+.skills .sectionTitle h2 {
+  font-size: 2rem;
+}
+.skills .sectionTitle p::before {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: #232227;
   position: absolute;
-  right: 100px;
+  top: 18px;
+  left: -75px;
+}
+.skills .skillsLayout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 10px;
+}
+.skills .skillsLayout .skill {
+  width: calc(100% / 4);
+  text-align: center;
+  padding-bottom: 80px;
+}
+.skills .skillsLayout .skillIcon {
+  color: #0be0b0;
+  font-size: 3rem;
+  padding-bottom: 20px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.skills .skillsLayout .skillIcon:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+.skills .skillsLayout p {
+  color: #232227;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.projects {
+  background-image: url(../assets/process-bg-1.png);
+  height: 400vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.projects .sectionTitle {
+  padding-top: 50px;
+  text-align: center;
+}
+.projects .sectionTitle .title {
+  padding-left: 150px;
+  position: relative;
+  display: inline-block;
+}
+.projects .sectionTitle .title::before {
+  content: "";
+  width: 1px;
+  height: 80px;
+  border-right: 1px solid #232227;
+  position: absolute;
+  bottom: 0;
+  left: 125px;
+}
+.projects .sectionTitle h2 {
+  font-size: 5.25rem;
+}
+.projects::before {
+  content: "";
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  position: absolute;
+  top: -150px;
+  rotate: -3deg;
+}
+
+.projectResults .project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.projectResults .project .projectTextContainer {
+  width: 30%;
+}
+.projectResults .project .projectImageContainer {
+  width: 45%;
 }
 
 html {
@@ -429,4 +539,27 @@ a {
 img {
   width: 100%;
   display: block;
+}
+
+.title {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  position: relative;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #232227;
+  padding-top: 20px;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #232227;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 50px;
+  text-transform: uppercase;
 }
