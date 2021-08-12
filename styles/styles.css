@@ -364,7 +364,6 @@ header p {
   position: absolute;
   top: -150px;
   rotate: -3deg;
-  overflow-x: hidden;
 }
 
 .profileFlex {
@@ -403,7 +402,7 @@ header p {
 .skills .sectionTitle {
   position: relative;
   top: -50px;
-  left: 100px;
+  padding-left: 100px;
 }
 .skills .sectionTitle h2 {
   font-size: 2rem;
@@ -789,6 +788,10 @@ html {
   background: transparent;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -853,6 +856,7 @@ h3 {
     width: 90%;
     padding-top: 50px;
     padding-left: 0px;
+    line-height: 40px;
   }
 
   .projectTextContainer .projectLinks a {
@@ -894,6 +898,7 @@ h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-bottom: 0;
   }
 
   .projectTextContainerLeft {
@@ -913,10 +918,18 @@ h3 {
 .projectResults .project .projectImageContainer {
     width: 80%;
   }
+
+  .projects .sectionTitle {
+    padding-bottom: 50px;
+  }
 }
 @media (max-width: 768px) {
   header h1 span {
     font-size: 4rem;
+  }
+
+  .profile {
+    padding-top: 150px;
   }
 
   .profile .sectionTitle h2 {

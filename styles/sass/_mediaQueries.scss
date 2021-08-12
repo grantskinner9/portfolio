@@ -10,6 +10,7 @@
     width: 90%;
     padding-top: 50px;
     padding-left: 0px;
+    line-height: 40px;
   }
   //projects
   .projectTextContainer .projectLinks a {
@@ -42,6 +43,7 @@
 @media (max-width: 850px) {
   .projectResults .project {
     flex-direction: column;
+    padding-bottom: 0;
   }
   .projectTextContainerLeft {
     order: 1;
@@ -55,6 +57,9 @@
   .projectResults .project .projectImageContainer {
     width: 80%;
   }
+  .projects .sectionTitle {
+    padding-bottom: 50px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -63,6 +68,10 @@
     font-size: 4rem;
   }
   //profile
+  .profile {
+    padding-top: 150px;
+  }
+
   .profile .sectionTitle h2 {
     font-size: 3rem;
   }
