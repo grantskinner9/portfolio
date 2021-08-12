@@ -499,9 +499,9 @@ header p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -514,8 +514,7 @@ header p {
   width: 45%;
 }
 .projectResults .project .projectImageContainer img {
-  height: 400px;
-  width: auto;
+  width: 100%;
 }
 
 .projectTextContainer .stackList {
@@ -529,6 +528,9 @@ header p {
 }
 .projectTextContainer .stackList li {
   font-family: "Montserrat", sans-serif;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
 }
 .projectTextContainer p {
   font-family: "Montserrat", sans-serif;
@@ -837,7 +839,7 @@ h3 {
 }
 @media (max-width: 950px) {
   .wrapper {
-    width: 90%;
+    width: 95%;
   }
 
   .skills .skillsLayout .skill {
@@ -849,9 +851,45 @@ h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .projectTextContainerLeft .projectLinks {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+  }
+
+  .projectTextContainer .projectLinks a {
+    margin: 10px 0;
+  }
+}
+@media (max-width: 850px) {
+  .projectResults .project {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .projectTextContainerLeft {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    text-align: left;
+  }
+
+  .projectTextContainerLeft .projectLinks {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .projectResults .project .projectTextContainer,
+.projectResults .project .projectImageContainer {
+    width: 80%;
   }
 }
 @media (max-width: 768px) {
@@ -865,6 +903,10 @@ h3 {
 
   .skills .skillsLayout .skillIcon {
     font-size: 2.5rem;
+  }
+
+  .projects .sectionTitle h2 {
+    font-size: 3rem;
   }
 
   input[name=email],

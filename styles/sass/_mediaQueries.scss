@@ -6,7 +6,7 @@
 
 @media (max-width: 950px) {
   .wrapper {
-    width: 90%;
+    width: 95%;
   }
   //skill
   .skills .skillsLayout .skill {
@@ -15,7 +15,32 @@
   //projects
   .projectTextContainer .projectLinks {
     flex-direction: column;
+    align-items: flex-start;
+  }
+  .projectTextContainerLeft .projectLinks {
     align-items: flex-end;
+  }
+
+  .projectTextContainer .projectLinks a {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .projectResults .project {
+    flex-direction: column;
+  }
+  .projectTextContainerLeft {
+    order: 1;
+    text-align: left;
+  }
+  .projectTextContainerLeft .projectLinks {
+    align-items: flex-start;
+  }
+
+  .projectResults .project .projectTextContainer,
+  .projectResults .project .projectImageContainer {
+    width: 80%;
   }
 }
 
@@ -30,6 +55,11 @@
   }
   .skills .skillsLayout .skillIcon {
     font-size: 2.5rem;
+  }
+
+  //projects
+  .projects .sectionTitle h2 {
+    font-size: 3rem;
   }
 
   //footer
