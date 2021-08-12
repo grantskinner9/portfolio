@@ -50,18 +50,22 @@
 
 .profileFlex {
   display: flex;
+  align-items: center;
   position: relative;
+
   .profileImageContainer {
-    width: 45%;
+    width: 35%;
   }
   .profileTextContainer {
-    width: 60%;
-    padding-top: 100px;
+    width: 65%;
     padding-left: 50px;
     color: $black;
     font-family: $primaryFont;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 52px;
     color: $grey;
+    p {
+      padding-bottom: 20px;
+    }
   }
 }

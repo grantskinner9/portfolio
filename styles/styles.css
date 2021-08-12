@@ -371,20 +371,25 @@ header p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
 }
 .profileFlex .profileImageContainer {
-  width: 45%;
+  width: 35%;
 }
 .profileFlex .profileTextContainer {
-  width: 60%;
-  padding-top: 100px;
+  width: 65%;
   padding-left: 50px;
   color: #232227;
   font-family: "Playfair Display", serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 52px;
   color: #7e7e7e;
+}
+.profileFlex .profileTextContainer p {
+  padding-bottom: 20px;
 }
 
 .skills {
@@ -833,6 +838,23 @@ h3 {
 }
 
 @media (max-width: 1050px) {
+  .profileFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .profileFlex .profileImageContainer {
+    width: 60%;
+  }
+
+  .profileFlex .profileTextContainer {
+    width: 90%;
+    padding-top: 50px;
+    padding-left: 0px;
+  }
+
   .projectTextContainer .projectLinks a {
     font-size: 1.1rem;
   }
@@ -897,6 +919,14 @@ h3 {
     font-size: 4rem;
   }
 
+  .profile .sectionTitle h2 {
+    font-size: 3rem;
+  }
+
+  .profileFlex .profileImageContainer {
+    width: 80%;
+  }
+
   .skills .skillsLayout .skill {
     width: calc(100% / 2);
   }
@@ -929,5 +959,17 @@ input[name=phone] {
 
   .skills .skillsLayout p {
     font-size: 1rem;
+  }
+
+  .projectTextContainer .stackList {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .projectTextContainer .stackList li {
+    width: 100%;
+    padding: 5px 0;
   }
 }
