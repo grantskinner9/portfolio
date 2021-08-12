@@ -1,5 +1,6 @@
 footer {
   background-color: $black;
+  background-position: contain;
   position: relative;
   height: 200vh;
   .footerTitle {
@@ -35,6 +36,7 @@ footer {
     background-repeat: no-repeat;
     background-position: top center;
     z-index: 1;
+    background-position: contain;
     // background-position: center;
   }
   &::after {

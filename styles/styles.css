@@ -358,7 +358,7 @@ header p {
 }
 .profile::before {
   content: "";
-  width: 100%;
+  width: 150%;
   height: 100px;
   background-color: #fff;
   position: absolute;
@@ -562,6 +562,7 @@ header p {
 
 footer {
   background-color: #232227;
+  background-position: contain;
   position: relative;
   height: 200vh;
 }
@@ -598,6 +599,7 @@ footer::before {
   background-repeat: no-repeat;
   background-position: top center;
   z-index: 1;
+  background-position: contain;
 }
 footer::after {
   content: "";
@@ -734,6 +736,7 @@ input[name=phone] {
 
 html {
   font-size: 125%;
+  overflow-x: hidden;
 }
 
 .wrapper {
