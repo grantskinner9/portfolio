@@ -2,7 +2,6 @@ footer {
   background-color: $black;
   background-position: contain;
   position: relative;
-  height: 200vh;
   .footerTitle {
     padding-top: 300px;
     text-align: center;
@@ -122,7 +121,7 @@ input[name="phone"] {
 .socials {
   display: flex;
   justify-content: center;
-  padding-top: 100px;
+  padding: 100px 0;
   li {
     z-index: 10;
     padding: 0 20px;

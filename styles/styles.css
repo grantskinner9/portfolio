@@ -564,7 +564,6 @@ footer {
   background-color: #232227;
   background-position: contain;
   position: relative;
-  height: 200vh;
 }
 footer .footerTitle {
   padding-top: 300px;
@@ -718,7 +717,7 @@ input[name=phone] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 100px;
+  padding: 100px 0;
 }
 .socials li {
   z-index: 10;
