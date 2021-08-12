@@ -11,6 +11,7 @@ footer {
       padding-left: 150px;
       position: relative;
       display: inline-block;
+      z-index: 10;
       &::before {
         content: "";
         width: 1px;
@@ -24,6 +25,8 @@ footer {
     h2 {
       font-size: 5.25rem;
       color: white;
+      z-index: 10;
+      position: relative;
     }
   }
   &::before {

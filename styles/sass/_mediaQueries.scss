@@ -1,0 +1,55 @@
+@media (max-width: 1050px) {
+  .projectTextContainer .projectLinks a {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .wrapper {
+    width: 90%;
+  }
+  //skill
+  .skills .skillsLayout .skill {
+    width: calc(100% / 3);
+  }
+  //projects
+  .projectTextContainer .projectLinks {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+@media (max-width: 768px) {
+  //header
+  header h1 span {
+    font-size: 4rem;
+  }
+  //skills
+  .skills .skillsLayout .skill {
+    width: calc(100% / 2);
+  }
+  .skills .skillsLayout .skillIcon {
+    font-size: 2.5rem;
+  }
+
+  //footer
+  input[name="email"],
+  input[name="phone"] {
+    width: 100%;
+  }
+  footer .footerTitle h2 {
+    font-size: 3rem;
+  }
+  form button {
+    width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 span {
+    font-size: 2.8rem;
+  }
+  .skills .skillsLayout p {
+    font-size: 1rem;
+  }
+}
