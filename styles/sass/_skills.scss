@@ -11,15 +11,14 @@
     padding-left: 100px;
     h2 {
       font-size: 2rem;
-    }
-    p {
+      position: relative;
       &::before {
         content: "";
         width: 50px;
         height: 2px;
         background-color: $black;
         position: absolute;
-        top: 18px;
+        top: 40px;
         left: -75px;
       }
     }
@@ -40,9 +39,6 @@
       padding-bottom: 20px;
       transition: 0.2s;
       width: 100%;
-      &:hover {
-        transform: scale(1.5);
-      }
     }
     p {
       color: $black;
