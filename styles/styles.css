@@ -313,7 +313,7 @@ header h1 span {
   padding: 10px 0 10px 0;
 }
 header p {
-  color: #7e7e7e;
+  color: #6e6e6e;
   font-family: "Montserrat", sans-serif;
   font-size: 0.9rem;
   letter-spacing: 0.5px;
@@ -385,7 +385,7 @@ header p {
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
   line-height: 52px;
-  color: #7e7e7e;
+  color: #6e6e6e;
 }
 .profileFlex .profileTextContainer p {
   padding-bottom: 20px;
@@ -429,7 +429,7 @@ header p {
   padding-top: 10px;
 }
 .skills .skillsLayout .skill {
-  width: calc(100% / 4);
+  width: 25%;
   text-align: center;
   padding-bottom: 80px;
 }
@@ -535,7 +535,7 @@ header p {
 }
 .projectTextContainer p {
   font-family: "Montserrat", sans-serif;
-  color: #7e7e7e;
+  color: #6e6e6e;
   letter-spacing: 0.5px;
   font-size: 0.9rem;
   line-height: 30px;
@@ -738,7 +738,7 @@ input[name=name] {
 
 input[name=email],
 input[name=phone] {
-  width: calc((100% / 2) - 2%);
+  width: 48%;
 }
 
 .socials {
@@ -844,18 +844,15 @@ h3 {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-
   .profileFlex .profileImageContainer {
     width: 60%;
   }
-
   .profileFlex .profileTextContainer {
     width: 90%;
     padding-top: 50px;
     padding-left: 0px;
     line-height: 40px;
   }
-
   .projectTextContainer .projectLinks a {
     font-size: 1.1rem;
   }
@@ -864,11 +861,9 @@ h3 {
   .wrapper {
     width: 95%;
   }
-
   .skills .skillsLayout .skill {
-    width: calc(100% / 3);
+    width: 33.3333333333%;
   }
-
   .projectTextContainer .projectLinks {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -878,13 +873,11 @@ h3 {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-
   .projectTextContainerLeft .projectLinks {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
   }
-
   .projectTextContainer .projectLinks a {
     margin: 10px 0;
   }
@@ -897,25 +890,21 @@ h3 {
             flex-direction: column;
     padding-bottom: 0;
   }
-
   .projectTextContainerLeft {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
     text-align: left;
   }
-
   .projectTextContainerLeft .projectLinks {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
   }
-
   .projectResults .project .projectTextContainer,
 .projectResults .project .projectImageContainer {
     width: 80%;
   }
-
   .projects .sectionTitle {
     padding-bottom: 50px;
   }
@@ -924,40 +913,31 @@ h3 {
   header h1 span {
     font-size: 4rem;
   }
-
   .profile {
     padding-top: 150px;
   }
-
   .profile .sectionTitle h2 {
     font-size: 3rem;
   }
-
   .profileFlex .profileImageContainer {
     width: 80%;
   }
-
   .skills .skillsLayout .skill {
-    width: calc(100% / 2);
+    width: 50%;
   }
-
   .skills .skillsLayout .skillIcon {
     font-size: 2.5rem;
   }
-
   .projects .sectionTitle h2 {
     font-size: 3rem;
   }
-
   input[name=email],
 input[name=phone] {
     width: 100%;
   }
-
   footer .footerTitle h2 {
     font-size: 3rem;
   }
-
   form button {
     width: auto;
   }
@@ -966,18 +946,15 @@ input[name=phone] {
   header h1 span {
     font-size: 2.8rem;
   }
-
   .skills .skillsLayout p {
     font-size: 1rem;
   }
-
   .projectTextContainer .stackList {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-
   .projectTextContainer .stackList li {
     width: 100%;
     padding: 5px 0;
